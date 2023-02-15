@@ -68,10 +68,15 @@ function calculation() {
   let number = parseFloat(month) + parseFloat(dayNumber) + ((year - 1933)*365.2524)
   let symbol = Math.floor(number % 20)
   document.getElementById("result").innerHTML = Tzolkin[symbol];
+  let extra = document.querySelector("#example");
+  if (extra) {
+    extra.remove()
+  }
   var a = document.createElement('a');
       var linkText = document.createTextNode("Click here to learn more");
       a.appendChild(linkText);
       a.title = "my title text";
+      a.id = "example";
       a.href = "https://www.google.com/search?q=Mayan+"+Tzolkin[symbol]+"&rlz=1C1GCEB_enUS1011US1011&sxsrf=AJOqlzVhD0n3cqnHxqJlAkJVz4Y-mLD3Ow%3A1676483845289&ei=BR3tY5-oEayP0PEPufWPgAs&ved=0ahUKEwjfvseAjZj9AhWsBzQIHbn6A7AQ4dUDCBA&uact=5&oq=Mayan+" + Tzolkin[symbol] + "&gs_lcp=Cgxnd3Mtd2l6LXNlcnAQAzIFCAAQgAQyCQgAEAgQHhDxBDIFCAAQhgMyBQgAEIYDMgUIABCGAzoKCAAQRxDWBBCwAzoHCAAQsAMQQzoNCAAQ5AIQ1gQQsAMYAToMCC4QyAMQsAMQQxgCOhIILhDHARDRAxDIAxCwAxBDGAI6DwguENQCEMgDELADEEMYAjoNCC4QDRCABBCxAxCxAzoHCAAQDRCABDoNCAAQDRCABBCxAxCDAToJCAAQDRCABBAKOgoILhANEIAEENQCOgcILhANEIAEOgkILhANEIAEEAo6BQguEIAEOgYIABAHEB46BwgAEIAEEAo6CAguEIAEENQCOgkIABAHEB4Q8QQ6DQgAEA0QgAQQsQMQsQM6CwgAEAgQBxAeEPEEOgoILhANELEDEIAEOhMIABANEIAEELEDEIMBELEDEIMBOgoIABANEIAEELEDSgQIQRgAUOEGWNMNYLIQaAFwAXgAgAF6iAG3BJIBAzQuMpgBAKABAcgBE8ABAdoBBggBEAEYCdoBBggCEAEYCA&sclient=gws-wiz-serp";
       a.target="_blank"
    document.getElementById("link").appendChild(a);
