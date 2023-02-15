@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.5.0/p5.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.5.0/addons/p5.sound.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <meta charset="utf-8" />
+  </head>
+  <body>
+    <main>
+      <h2>Enter your birthday</h2>
+      <label for="cars">Choose your month:</label>
+
+      <select name="month" id="month">
+        <option value="January">January</option>
+        <option value="February">February</option>
+        <option value="March">March</option>
+        <option value="April">April</option>
+        <option value="May">May</option>
+        <option value="June">June</option>
+        <option value="July">July</option>
+        <option value="August">August</option>
+        <option value="September">September</option>
+        <option value="October">October</option>
+        <option value="November">November</option>
+        <option value="December">December</option>
+      </select>
+      <br /><br />
+        <label for="fname">Day:</label>
+        <input type="text" id="day" name="fname" /><br /><br />
+        <label for="lname">Year</label>
+        <input type="text" id="year" name="lname" /><br /><br />
+        <button id="submit" onclick="showAlert()">Submit</button>
+      <h2> Your symbol is... <span id="result"></span></h2>
+      <div id="link"></div>
+    </main>
+    <script src="sketch.js"></script>
+  </body>
+</html>
