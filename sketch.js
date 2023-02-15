@@ -1,6 +1,6 @@
 const month = document.getElementById("month").value;
 let months = [0,31,28,31,30,31,30,31,31,30,31,30,31]
-const Tzolkin = ["CHUWEN","EB'","B’EN","IX","MEN","K’IB’","KAB’AN","ETZ’NAB’","KAWAK","AJAW","IMIX’","IK’","AK’B’AL","K’AN","CHIK-CHAN","KIMI","MANIK’","LAMAT","MULUK","OK"]
+const Tzolkin = ["CHUWEN","EB'","B’EN","IX","MEN","AJMAQ","KAB’AN","ETZ’NAB’","KAWAK","AJAW","IMIX’","IK’","AK’B’AL","K’AN","CHIK-CHAN","KIMI","MANIK’","LAMAT","MULUK","OK"]
 
 function monthValue(monthInput) {
    switch (monthInput) {
